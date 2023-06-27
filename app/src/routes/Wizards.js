@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getLocalStorage, setLocalStorage } from '../utils/localStorage';
+import {getData} from '../utils/data.js'
+
 
 export default function Wizards() {
   const ENDPOINT = 'Wizards';
