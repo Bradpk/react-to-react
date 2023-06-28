@@ -24,8 +24,8 @@ export default function Houses() {
   });
 
   return (
-    <main style={{ padding: "1rem 0" }} class="container">
-      <div class="row justify-content-center text-center gap-2">
+    <main style={{ padding: "1rem 0" }} className="container">
+      <div className="row justify-content-center text-center gap-2">
         <h2>Houses</h2>
         {housesList}
       </div>
