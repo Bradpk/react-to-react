@@ -13,7 +13,7 @@ export default function Houses() {
     } else {
       getData(ENDPOINT)
         .then(() => {
-          setHouses();
+          setHouses(data);
           setLocalStorage();
         })
     }
@@ -36,7 +36,7 @@ export default function Houses() {
 
 const House = ({ house }) => {
   return (
-    <div class='card col-5 p-3'>
+    <div className='card col-5 p-3'>
       <h2>{house.name}</h2>
       <div>Colors: {house.houseColours}</div>
       <div>Founder: {house.founder}</div>

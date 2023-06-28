@@ -33,7 +33,7 @@ export default function Wizards() {
                 </tr>
               </thead>
               <tbody>
-                {wizards.map((wizard) => <Wizard key={wizard.id} />)}
+                {Wizards.map((wizard) => <Wizard key={wizard.id} />)}
               </tbody>
             </table>
           </div>
