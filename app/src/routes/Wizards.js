@@ -4,7 +4,7 @@ import {getData} from '../utils/data.js'
 
 export default function Wizards() {
   const ENDPOINT = 'Wizards';
-  const [wizards, setWizards] = useState();
+  const [wizards, setWizards] = useState([]);
   
   useEffect(() => {
     let data = getLocalStorage(ENDPOINT);
@@ -33,7 +33,7 @@ export default function Wizards() {
                 </tr>
               </thead>
               <tbody>
-                {Wizards.map((wizard) => <Wizard key={wizard.id} />)}
+                {wizards.map((wizard) => <Wizard key={wizard.id} />)}
               </tbody>
             </table>
           </div>
